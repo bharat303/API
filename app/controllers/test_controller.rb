@@ -7,5 +7,6 @@ class TestController < ApplicationController
 
 	def display
 		@test = Hash.from_xml(params[:code]).to_json
+		render json: @test
 	end
 end
