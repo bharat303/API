@@ -1,0 +1,10 @@
+
+<%= form_tag(:action => 'display') do %>
+  <div class="field">
+    Enter iso_code
+    <%= text_area_tag :code %>
+  </div><br>
+  <div class="actions">
+    <%= submit_tag "submit" %>
+  </div>
+<% end %>
